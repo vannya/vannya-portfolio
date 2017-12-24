@@ -1,0 +1,28 @@
+.social-box {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 1rem;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background: none;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-text {
+  margin-left: 10px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: center;
+  transition: all 0.3s;
+}

@@ -1,0 +1,66 @@
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio-item > a {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.portfolio-item > p {
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.portfolio-item > a:hover {
+  text-decoration: underline;
+}
+
+.port-header {
+  position: relative;
+  padding: 2rem 0 0 0;
+}
+
+.port-header:before {
+  position: absolute;
+  left: 50%;
+  height: 1px;
+  width: 60px;
+  bottom: -10px;
+  margin-left: -30px;
+  background-color: #bf9f5a;
+  content: "";
+}
+.port-header:after {
+  position: absolute;
+  left: 50%;
+  height: 1px;
+  width: 90px;
+  bottom: -5px;
+  margin-left: -45px;
+  background-color: #bf9f5a;
+  content: "";
+}
+
+.port-image {
+  position: relative;
+  max-height: auto;
+  width: 700px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 2rem 0;
+  box-shadow: 3px 3px 3px gray;
+}
+
+.port-image > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}

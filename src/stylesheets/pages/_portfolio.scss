@@ -1,0 +1,15 @@
+.portfolio {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.port-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.port-row > a {
+  text-decoration: none;
+}
