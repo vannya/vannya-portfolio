@@ -6,11 +6,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="social-icons">
-        <Link to='/about'><SocialIcon text="Facebook" icon="fab fa-facebook-f" /></Link>
-        <Link to='/about'><SocialIcon text="Instagram" icon="fab fa-instagram" /></Link>
-        <Link to='/about'><SocialIcon text="Pinterest" icon="fab fa-pinterest" /></Link>
-        <Link to='/about'><SocialIcon text="LinkedIn" icon="fab fa-linkedin-in" /></Link>
-        <Link to='/about'><SocialIcon text="Github" icon="fab fa-github" /></Link>
+        <Link to='https://www.facebook.com/vannienicole' target="_blank" rel="noopener noreferrer"><SocialIcon text="Facebook" icon="fab fa-facebook-f" /></Link>
+        <Link to='https://www.instagram.com/minimalvannya/' target="_blank" rel="noopener noreferrer"><SocialIcon text="Instagram" icon="fab fa-instagram" /></Link>
+        <Link to='https://www.linkedin.com/in/vannya/' target="_blank" rel="noopener noreferrer"><SocialIcon text="LinkedIn" icon="fab fa-linkedin-in" /></Link>
+        <Link to='https://github.com/vannya' target="_blank" rel="noopener noreferrer"><SocialIcon text="Github" icon="fab fa-github" /></Link>
       </div>
       <div className="copyright">©2017 - Van Tabbert. All Rights Reserved.</div>
     </div>

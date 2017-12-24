@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
+import SinglePageHome from "./components/pages/SinglePageHome";
+import NavBarSP from "./components/header/NavBarSP";
 import Header from "./components/header/Header";
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Portfolio from "./components/pages/Portfolio";
-import ProjectPage from "./components/pages/ProjectPage";
 import Footer from "./components/footer/Footer";
+import Resume from "./components/pages/Resume";
+import About from './components/pages/About';
+import Projects from "./components/pages/Projects";
+import ProjectPage from "./components/pages/ProjectPage";
 import PortfolioAPI from "./api/PortfolioData";
-
-const Resume = () => <h2>Resume</h2>;
 
 class App extends Component {
   state = {
@@ -18,18 +18,18 @@ class App extends Component {
   componentWillMount() {
     this.setState({
       portfolio: PortfolioAPI.portfolio
-    }); 
+    });
   }
 
   render() {
     return (
       <div>
-        {window.location.pathname ==="/" ? "" : <Header />}
-        <Route exact path="/" component={Home} />
+        {window.location.pathname ==="/" ? <NavBarSP /> : <Header />}
+        <Route exact path='/' render={() => <SinglePageHome portfolio={this.state.portfolio} />} />
         <Route
           exact
-          path="/portfolio"
-          render={() => <Portfolio portfolio={this.state.portfolio} />}
+          path="/projects"
+          render={() => <Projects portfolio={this.state.portfolio} />}
         />
         <Route path="/about" component={About} />
         <Route path="/resume" component={Resume} />
@@ -55,4 +55,3 @@ class App extends Component {
 }
 
 export default App;
-

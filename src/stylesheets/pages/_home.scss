@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background: url("./assets/computer.jpg") no-repeat center center fixed; 
+  background: url("./assets/computerdark.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,8 +16,8 @@
 
 .rw-wrapper{
   margin: 0 auto;
-  top: 40%;
-	width: 80%;
+  top: 30%;
+	width: 70%;
   position: relative;
   font-size: 1.8rem;
   font-family: "Lora", serif;
@@ -28,7 +28,7 @@
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
 .rw-sentence span{
-	color: #444;
+	color: rgb(216, 216, 216);
 	font-size: 200%;
 	font-weight: normal;
 }
@@ -41,9 +41,9 @@
 	opacity: 0;
 	overflow: hidden;
 	color: #bf9f5a;
-	-webkit-animation: rotateWord 30s linear infinite 0s;
-	-ms-animation: rotateWord 30s linear infinite 0s;
-	animation: rotateWord 30s linear infinite 0s;
+	-webkit-animation: rotateWord 20s linear infinite 0s;
+	-ms-animation: rotateWord 20s linear infinite 0s;
+	animation: rotateWord 20s linear infinite 0s;
 }
 .rw-words-1 span:nth-child(2) { 
     -webkit-animation-delay: 5s; 
@@ -63,18 +63,7 @@
 	animation-delay: 15s; 
 	color: #bf9f5a;
 }
-.rw-words-1 span:nth-child(5) { 
-    -webkit-animation-delay: 20s; 
-	-ms-animation-delay: 20s; 
-	animation-delay: 20s; 
-	color: #bf9f5a;
-}
-.rw-words-1 span:nth-child(6) { 
-    -webkit-animation-delay: 25s; 
-	-ms-animation-delay: 25s; 
-	animation-delay: 25s; 
-	color: #bf9f5a;
-}
+
 @keyframes rotateWord {
     0% { opacity: 0; }
     2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
@@ -90,3 +79,19 @@
 @media screen and (max-width: 320px){
 	.rw-sentence { font-size: 9px; }
 }
+
+.skills {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: auto;
+	padding: 2rem 0;
+	max-width: 1000px;
+  }
+  
+  .skills > div {
+	margin: 2rem;
+	max-width: 250px;
+	flex: 1 1 33%;
+  }

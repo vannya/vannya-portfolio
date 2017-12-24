@@ -4,11 +4,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 0 4rem 0;
 }
 
 .portfolio-item > a {
   padding: 0.5rem;
   font-size: 1.4rem;
+  color: #bf9f5a;
+  text-decoration: none;
 }
 
 .portfolio-item > p {
@@ -16,34 +19,8 @@
   padding: 0 2rem;
 }
 
-.portfolio-item > a:hover {
+.portfolio-item > a:hover { 
   text-decoration: underline;
-}
-
-.port-header {
-  position: relative;
-  padding: 2rem 0 0 0;
-}
-
-.port-header:before {
-  position: absolute;
-  left: 50%;
-  height: 1px;
-  width: 60px;
-  bottom: -10px;
-  margin-left: -30px;
-  background-color: #bf9f5a;
-  content: "";
-}
-.port-header:after {
-  position: absolute;
-  left: 50%;
-  height: 1px;
-  width: 90px;
-  bottom: -5px;
-  margin-left: -45px;
-  background-color: #bf9f5a;
-  content: "";
 }
 
 .port-image {

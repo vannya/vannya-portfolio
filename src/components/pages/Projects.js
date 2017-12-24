@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from '../common/Card';
+import PageHeader from '../common/PageHeader';
 
-const Portfolio = props => {
+const Projects = props => {
 
   return (
-    <div className="portfolio">
+    <div id="projects" className="projects">
+      <PageHeader text="Projects"/>
       <div className="port-row">
         {Object.keys(props.portfolio).map(key => {
           const image = require(`../../stylesheets/assets/${props.portfolio[key].img}`);
@@ -21,4 +23,4 @@ const Portfolio = props => {
   );
 };
 
-export default Portfolio;
+export default Projects;

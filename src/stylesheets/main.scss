@@ -27,15 +27,19 @@
 
 //5. Components
 @import
-	'components/navbar',
+	'components/button',
+	'components/call_to_action',
 	'components/card',
+	'components/icon_blurb',
+	'components/navbar',
+	'components/page_header',
 	'components/social_icon';
 	
 //6. Page
 @import
 	'pages/about',
 	'pages/home',
-	'pages/portfolio',
+	'pages/projects',
 	'pages/project_page',
 	'pages/resume';
 

@@ -1,32 +1,25 @@
 .about {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem;
+
+  > p {
+    max-width: 1200px;
+    padding: 0 4rem;
+  }
+}
+
+.img-group {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
-}
+  flex-wrap: wrap;
 
-.about-header {
-  position: relative;
-}
+  > img {
+    margin: 0.75rem;
+  }
 
-.about-header:before {
-  position: absolute;
-  left: 50%;
-  height: 1px;
-  width: 60px;
-  bottom: -10px;
-  margin-left: -30px;
-  background-color: #bf9f5a;
-  content: "";
-}
-.about-header:after {
-  position: absolute;
-  left: 50%;
-  height: 1px;
-  width: 90px;
-  bottom: -5px;
-  margin-left: -45px;
-  background-color: #bf9f5a;
-  content: "";
 }

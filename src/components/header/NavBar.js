@@ -19,7 +19,7 @@ class NavBar extends Component {
         <ul>
           <Link to="/"><li className={this.state.selectedKey === "1" ? "selected" : ""} onClick={() => this.handleOnClick("1")}>HOME</li></Link>
           <Link to="/about"><li className={this.state.selectedKey === "2" ? "selected" : ""} onClick={() => this.handleOnClick("2")}>ABOUT</li></Link>
-          <Link to="/portfolio"><li className={this.state.selectedKey === "3" ? "selected" : ""} onClick={() => this.handleOnClick("3")}>PORTFOLIO</li></Link>
+          <Link to="/projects"><li className={this.state.selectedKey === "3" ? "selected" : ""} onClick={() => this.handleOnClick("3")}>PROJECTS</li></Link>
           <Link to="/resume"><li className={this.state.selectedKey === "4" ? "selected" : ""} onClick={() => this.handleOnClick("4")}>RESUME</li></Link>
           <Link to="https://github.com/vannya" target="_blank"><li>GITHUB</li></Link>
           <Link to="https://www.linkedin.com/in/vannya/" target="_blank"><li>LINKEDIN</li></Link>

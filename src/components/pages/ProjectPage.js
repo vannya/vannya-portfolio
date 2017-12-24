@@ -1,10 +1,11 @@
 import React from "react";
+import PageHeader from '../common/PageHeader';
 
 const ProjectPage = props => {
   const image = require(`../../stylesheets/assets/${props.portfolio.img}`);
   return (
     <div className="portfolio-item">
-      <h2 className="port-header">{props.portfolio.name}</h2>
+      <PageHeader text={props.portfolio.name} />
       <div className="port-image">
         <img src={image} alt="" />
       </div>
