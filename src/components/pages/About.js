@@ -28,9 +28,9 @@ const About = props => {
         radical simplicity, minimalism…..and of course, too many sci-fi novels.
       </p>
       <div className="img-group">
-        <img src={shrine} alt="" height="300px" width="300px" />
-        <img src={littlevan} alt="" height="300px" width="300px" />
-        <img src={rocks} alt="" height="300px" width="300px" />
+        <img className="canhide" src={shrine} alt="Van and daughter at Shrine" />
+        <img className="canhide" src={littlevan} alt="Little Van"  />
+        <img src={rocks} alt="Bouldering Van"  />
       </div>
       <p>
       When my hands are not attached to my keyboard, you’ll more than likely

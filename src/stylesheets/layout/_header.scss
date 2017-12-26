@@ -4,6 +4,12 @@
   justify-content: center;
   align-items: center;
   padding: 4rem 0;
+
+  > img {
+    @include media('<=phone') {
+      width: 250px;
+    }
+  }
 }
 
 .header-subtitle {
@@ -11,6 +17,10 @@
   padding: 0.5rem 0.5rem;
   font-size: 1.1rem;
   font-style: italic;
+
+  @include media('<=phone') {
+    font-size: 14px;
+  }
 }
 
 .header-subtitle:before {
@@ -22,6 +32,9 @@
   left: auto;
   right: 100%;
   top: 50%;
+  @include media('<=phone') {
+    width: 30px;
+  }
 }
 
 .header-subtitle:after {
@@ -33,4 +46,7 @@
   left: 100%;
   right: auto;
   top: 50%;
+  @include media('<=phone') {
+    width: 30px;
+  }
 }

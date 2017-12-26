@@ -7,9 +7,10 @@ const Home = () => {
         <div className="hero-overlay">
           <div className="rw-wrapper">
             <div className="rw-sentence">
-              <span>Hi! I'm Van, </span>
+              <span>Hi! I'm </span>
               <div className="rw-words rw-words-1">
-                <span>a front-end developer.</span>
+                <span>Van.</span>
+                <span>a front end developer.</span>
                 <span>a number cruncher.</span>
                 <span>a minimalist.</span>
                 <span>a team leader.</span>
@@ -23,10 +24,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// <div className="skills">
-// <IconBlurb text="Web Development" iconName="fas fa-desktop fa-4x" blurb="Words Words Words Words" />
-// <IconBlurb text="UI/UX Design" iconName="fas fa-desktop fa-4x" blurb="User-focused interfaces " />
-// <IconBlurb text="" iconName="fas fa-desktop fa-4x" blurb="Words Words Words Words" />
-// </div>
-

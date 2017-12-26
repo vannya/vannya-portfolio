@@ -4,17 +4,24 @@
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
 
-  &.sticky {
-    position: fixed;
-    top:0;
-    width: 100%;
-  }
-
 }
 .navbar > ul {
   position: relative;
   margin: 0;
+  padding: 0;
   line-height: 64px;
+}
+
+.web-nav {
+  @include media('<desktop'){
+    display: none;
+  }
+}
+
+.mobile-nav {
+  @include media('>=desktop'){
+    display: none;
+  } 
 }
 
 .navbar > ul > a > li {
@@ -40,5 +47,10 @@
   &.selected {
     border-bottom: 2px solid #bf9f5a;
   }
+
+  @include media('<tablet'){
+    padding: 0 5px;
+    font-size: 12px;
+  } 
 }
 

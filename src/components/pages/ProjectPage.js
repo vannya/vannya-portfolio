@@ -1,17 +1,20 @@
 import React from "react";
 import PageHeader from '../common/PageHeader';
+import Button from '../common/Button';
 
 const ProjectPage = props => {
   const image = require(`../../stylesheets/assets/${props.portfolio.img}`);
   return (
-    <div className="portfolio-item">
+    <div className="project-item">
       <PageHeader text={props.portfolio.name} />
-      <div className="port-image">
+      <div className="project-image">
         <img src={image} alt="" />
       </div>
       <p>{props.portfolio.description}</p>
-      <a href={props.portfolio.livelink}>Live Demo</a>
-      <a href={props.portfolio.github}>Github</a>
+      <div className="project-links">
+        <a href={props.portfolio.livelink}><Button text='Live Demo'/></a>
+        <a href={props.portfolio.github}><Button text='View Code'/></a>    
+      </div>
     </div>
   );
 };

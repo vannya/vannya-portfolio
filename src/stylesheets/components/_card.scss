@@ -1,6 +1,10 @@
 .card {
   margin: 2rem 0;
   border: 1px solid lightgray;
+
+  @include media('<tablet') {
+    margin: 0.4rem 0;
+  }
 }
 
 .image-box {
@@ -9,6 +13,11 @@
   width: 350px;
   overflow: hidden;
   cursor: pointer;
+
+  @include media('<tablet') {
+    height: 120px;
+    width: 233px;
+  }
 }
 
 .card-image {
@@ -18,10 +27,14 @@
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
-}
+  @include media('<tablet') {
+    height: 120px;
+    width: 236px;
+  }
 
-.card-image:hover {
-  transform: scale(1.2);
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .card-caption {

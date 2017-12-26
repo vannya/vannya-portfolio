@@ -1,4 +1,4 @@
-.portfolio-item {
+.project-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,37 +7,47 @@
   padding: 0 0 4rem 0;
 }
 
-.portfolio-item > a {
-  padding: 0.5rem;
-  font-size: 1.4rem;
-  color: #bf9f5a;
-  text-decoration: none;
-}
-
-.portfolio-item > p {
+.project-item > p {
   max-width: 800px;
   padding: 0 2rem;
 }
 
-.portfolio-item > a:hover { 
-  text-decoration: underline;
-}
-
-.port-image {
+.project-image {
   position: relative;
-  max-height: auto;
+  height: auto;
   width: 700px;
   overflow: hidden;
   cursor: pointer;
   margin: 2rem 0;
   box-shadow: 3px 3px 3px gray;
+
+  @include media('<tablet') {
+    height: auto;
+    width: 360px;
+  }
+
+  @include media('<phone') {
+    height: auto;
+    width: 250px;
+  }
 }
 
-.port-image > img {
+.project-image > img {
   width: 100%;
   height: auto;
   object-fit: cover;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > a {
+    padding: 0.25rem 1rem;
+  }
 }

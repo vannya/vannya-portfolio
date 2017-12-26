@@ -7,7 +7,7 @@ const Header = props => {
     <div>
       <div className="header">
         <img src={logo} alt="" />
-        <div className="header-subtitle">Front End Developer</div>
+        <div className="header-subtitle">Front End Developer</div> 
       </div>
       <NavBar />
     </div>

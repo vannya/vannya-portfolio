@@ -6,3 +6,16 @@
   border-radius: 8px;
   outline: none;
 }
+
+.btn-color {
+  padding: 0.25rem 1rem;
+  background-color: #bf9f5a;
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  outline: none;
+
+  &:hover {
+    background-color: #a88a4f;
+  }
+}

@@ -25,4 +25,8 @@
   vertical-align: top;
   text-align: center;
   transition: all 0.3s;
+
+  @include media('<tablet') {
+    display: none;
+  }
 }
