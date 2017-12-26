@@ -13,7 +13,7 @@ const Projects = props => {
           const image = require(`../../stylesheets/assets/${props.portfolio[key].img}`);
 
           return (
-            <Link to={`/portfolio/${props.portfolio[key].pagename}`} key={key}>
+            <Link to={`/projects/${props.portfolio[key].pagename}`} key={key}>
               <Card title={props.portfolio[key].name} image={image} />
             </Link>
           );

@@ -1,4 +1,5 @@
 import React from "react";
+import BouncingArrow from '../common/BouncingArrow';
 
 const Home = () => {
   return (
@@ -6,16 +7,11 @@ const Home = () => {
       <div className="hero">
         <div className="hero-overlay">
           <div className="rw-wrapper">
-            <div className="rw-sentence">
-              <span>Hi! I'm </span>
-              <div className="rw-words rw-words-1">
-                <span>Van.</span>
-                <span>a front end developer.</span>
-                <span>a number cruncher.</span>
-                <span>a minimalist.</span>
-                <span>a team leader.</span>
-              </div>
-            </div>
+            <div className="header-intro">HELLO, MY NAME IS</div>
+            <div className="header-name">VAN</div>
+            <div className="header-name">TABBERT</div>
+            <div className="header-typewriter anim-typewriter">I'M A FRONT END DEVELOPER.</div>
+            <a href="#about"><BouncingArrow /></a>
           </div>
         </div>
       </div>
@@ -24,3 +20,10 @@ const Home = () => {
 };
 
 export default Home;
+
+// <div className="rw-words rw-words-1">
+// <span></span>
+// <span>NUMBER CRUNCHER.</span>
+// <span>MINIMALIST.</span>
+// <span>BOOK DEVOURER.</span>
+// </div>

@@ -38,7 +38,7 @@ class App extends Component {
             <Route
               key={item}
               exact
-              path={`/portfolio/${this.state.portfolio[item].pagename}`}
+              path={`/projects/${this.state.portfolio[item].pagename}`}
               render={() => (
                 <ProjectPage
                   key={item}

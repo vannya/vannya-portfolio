@@ -7,7 +7,7 @@ const CallToAction = () => {
     <div id="cta" className="call-to-action">
       <div className="cta-overlay">
         <div className="cta-text">
-          <a href="/resume"><Button text="View My Resume" style="whites" /></a>
+          <a href="/resume"><Button text="View My Resume" coloration="white" /></a>
         </div>
       </div>
     </div>

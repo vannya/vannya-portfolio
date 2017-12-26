@@ -36,6 +36,7 @@ const About = props => {
       When my hands are not attached to my keyboard, you’ll more than likely
       find me at the gym, yoga studio or traveling around the US.
     </p>
+    { window.location.pathname === "/" ? <a href="#cta"><i className="fas fa-angle-down"></i></a> : ""}
     </div>
   );
 };
