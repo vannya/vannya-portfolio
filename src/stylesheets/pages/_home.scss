@@ -14,17 +14,13 @@
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHUlEQVQYV2MU4Vg7882P4HQGKGCEMTAEYCoxVAAAUA0IBXarHFAAAAAASUVORK5CYII=) repeat; 
 }
 
-.rw-wrapper{
+.typing-wrapper{
   top: 30%;
 	width: 100%;
   position: relative;
 	font-family: 'Roboto Slab', serif;
 	text-align: center;
 	color: white;
-	
-	@include media('<tablet') {
-    padding: 0 0 0 5%;
-  }
 }
 
 .header-intro {
@@ -33,11 +29,18 @@
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.8rem;
 	padding-bottom: 1rem;
+
+	@include media('<tablet') {
+		font-size: 1rem;
+	}
 }
 
 .header-name {
 	font-size: 4rem;
 	font-weight: 700;
+	@include media('<tablet') {
+		font-size: 3rem;
+	}
 }
 
 .header-typewriter{
@@ -49,6 +52,9 @@
 	font-size: 1.8rem;
 	white-space: nowrap;
 	overflow: hidden;
+	@include media('<tablet') {
+		font-size: 1rem;
+	}
 }
 
 .anim-typewriter{

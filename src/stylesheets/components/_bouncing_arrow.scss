@@ -8,6 +8,9 @@
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-duration: 1.5s;
+  @include media('<tablet') {
+		font-size: 2rem;
+	}
 }
 
 @keyframes bounce {
