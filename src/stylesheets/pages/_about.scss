@@ -4,6 +4,7 @@
   justify-content: space-around;
   align-items: center;
   margin: 3rem;
+  min-height: 100vh;
 
   > p {
     max-width: 1200px;
@@ -27,23 +28,73 @@
   }
 }
 
-.img-group {
+.about-lower {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 2rem 0;
   flex-wrap: wrap;
+  @include media('>desktop') {
+    max-width: 1200px;
+  }
+  @include media('<desktop') {
+    max-width: 600px;
+  }
+  
+
+  > div {
+    width: 200px;
+    margin: 0.5rem 0.5rem;
+  }
+
+  > div > h2 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  > div > h4 {
+    margin: 0 auto;
+    font-size: 0.9rem;
+  }
+}
+
+.about-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include media('<desktop') {
+    flex-wrap: wrap;
+  }
+}
+
+.img-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 50%;
+
+  @include media('<desktop') {
+    padding: 0 1rem;
+  }
  
   > img { 
     margin: 0.75rem;
     height: 300px;
     width: 300px;
-
-    &.canhide {
-      @include media('<tablet') {
-        display: none;
-      }
-    }
   }
 
+  > p {
+    margin: 0.75rem;
+  }
 }
+
+.bar-group {
+  margin: 0.75rem;
+  flex: 1 0 50%;
+  max-width: 500px;
+}
+
