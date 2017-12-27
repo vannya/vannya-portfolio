@@ -794,7 +794,8 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  animation: slideInBottom .75s ease both; }
   @media (min-width: 1025px) {
     .about-lower {
       max-width: 1200px; } }
@@ -825,7 +826,8 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1 0 50%; }
+  flex: 1 0 50%;
+  animation: slideInLeft .75s ease both; }
   @media (max-width: 1023px) {
     .img-group {
       padding: 0 1rem; } }
@@ -836,10 +838,45 @@ button:hover {
   .img-group > p {
     margin: 0.75rem; }
 
+.nodisplay {
+  visibility: hidden; }
+
 .bar-group {
   margin: 0.75rem;
   flex: 1 0 50%;
-  max-width: 500px; }
+  max-width: 500px;
+  animation-name: slideInRight;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-delay: initial;
+  animation-iteration-count: initial;
+  animation-direction: initial;
+  animation-fill-mode: both;
+  animation-play-state: initial; }
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(300px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .hero {
   height: 100vh;

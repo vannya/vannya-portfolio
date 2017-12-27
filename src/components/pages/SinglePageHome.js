@@ -5,6 +5,7 @@ import Projects from './Projects';
 import CallToAction from '../common/CallToAction';
 
 const SinglePageHome = (props) => {
+  
   return (
     <div>
       <Home />
