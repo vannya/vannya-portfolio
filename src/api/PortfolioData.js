@@ -9,6 +9,14 @@ module.exports = {
       img: "junipermail.jpg"
     },
     {
+      pagename: "bearbnb",
+      name: "BearBnb",
+      description: "Currently, developing a clone of the popular site Airbnb using MERN stack as a 4 person remote team.  Responsible for entire backend, database structure, application architecture, OAuth implementation and user admin pages.  Additionally, I created the navigation and main overview sections of the home and host pages.  Acting Project Manager/Lead Developer on the site.",
+      livelink: "https://bearbnb-06.herokuapp.com",
+      github: "https://github.com/chingu-voyage3/bears-06",
+      img: "bearbnb.JPG"
+    },
+    {
       pagename: "momentum",
       name: "Momentum Clone",
       description: "Clone of a popular productivity Chrome Extension using React, Firebase and external APIs.  Features include a Pomodoro timer, daily quotes, local weather, bookmarks and agenda/checklist.  The live demo is a stand alone build of the extension for demonstration purposes.",
@@ -17,12 +25,12 @@ module.exports = {
       img: "momentumclone.JPG"
     },
     {
-      pagename: "bearbnb",
-      name: "BearBnb",
-      description: "Currently, developing a clone of the popular site Airbnb using MERN stack as a 4 person remote team.  Responsible for entire backend, database structure, application architecture, OAuth implementation and user admin pages.  Additionally, I created the navigation and main overview sections of the home and host pages.  Acting Project Manager/Lead Developer on the site.",
-      livelink: "https://bearbnb-06.herokuapp.com",
-      github: "https://github.com/chingu-voyage3/bears-06",
-      img: "bearbnb.JPG"
+      pagename: "fcc",
+      name: "FCC Projects",
+      description: "Portfolio site with all the projects completed during the FCC Front End certificate. Projects include Simon and Tic Tac Toe games, a Pomodoro Timer, Personal Calculator, a quote generator, weather app and others.  Simple UI designs to focus on the functionality of the projects.",
+      livelink: "https://fcc.vannya.me",
+      github: "https://github.com/vannya/fcc-projects",
+      img: "fcc.jpg"
     },
     {
       pagename: "corporatesite",
