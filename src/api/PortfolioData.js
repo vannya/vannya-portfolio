@@ -11,10 +11,18 @@ module.exports = {
     {
       pagename: "bearbnb",
       name: "BearBnb",
-      description: "Currently, developing a clone of the popular site Airbnb using MERN stack as a 4 person remote team.  Responsible for entire backend, database structure, application architecture, OAuth implementation and user admin pages.  Additionally, I created the navigation and main overview sections of the home and host pages.  Acting Project Manager/Lead Developer on the site.",
+      description: "A clone of the popular site Airbnb using MERN stack developed as a 4 person remote team.  Responsible for entire backend, database structure, application architecture, OAuth implementation and user admin pages.  Additionally, I created the navigation and main overview sections of the home and host pages.  Acting Project Manager/Lead Developer on the site.",
       livelink: "https://bearbnb-06.herokuapp.com",
       github: "https://github.com/chingu-voyage3/bears-06",
       img: "bearbnb.JPG"
+    },
+    {
+      pagename: "mernapp",
+      name: "Vannya-MERN-App",
+      description: "MERN app generator published to npm.  I found I was writing the same starter code for my projects and decided to create this to streamline my development time.  Feautures include a full Express and Node backend with keys, Google OAuth, basic routing and MongoDB database connection.  The ReactJS front end (create-react-app) includes Redux, OAuth client side routing, React Router V4 and Sass integration.",
+      livelink: "https://www.npmjs.com/package/vannya-mern-app",
+      github: "https://github.com/vannya/vannya-mern-app",
+      img: "npm.jpg"
     },
     {
       pagename: "momentum",
