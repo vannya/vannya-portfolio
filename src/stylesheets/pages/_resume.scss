@@ -1,0 +1,191 @@
+.resume-download {
+  text-align: center;
+  padding-top: 1rem;
+
+  > a {
+    color: #025757;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #025757;
+  }
+}
+
+.resume-wrapper {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #bf9f5a;
+  margin: 2em 8em;
+  @include media("<desktop"){
+    margin: 2em 6em;
+  }
+  @include media("<tablet"){
+    margin: 2em 4em;
+  }
+  @include media("<small"){
+    margin: 2em 0;
+  }
+
+  .resume-header {
+    display: flex;
+    border-bottom: 1px solid #bf9f5a;
+    background-color: #f1e6ce;
+
+    .resume-header-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      @include media("<desktop"){
+        display: none;
+      }
+
+      .resume-img {
+        height: 200px;
+        width: 200px;
+        margin: 3em;
+        margin-left: 6em;
+        border-radius: 100%;
+      }
+    }
+
+    .resume-header-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 5em;
+      width: 75%;
+      @include media("<desktop"){
+        width: 100%;
+        padding: 2em;
+        text-align: center;
+      }
+      @include media("<small"){
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+      }
+      
+
+      .resume-h1 {
+        font-size: 3em;
+        @include media("<small"){
+          font-size: 2em;
+        }
+        @include media("<phone"){
+          font-size: 1.5em;
+        }
+      }
+
+      .resume-h2 {
+        font-size: 1.1em;
+        @include media("<small"){
+          font-size: 1em;
+        }
+        @include media("<phone"){
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  .resume-body {
+    display: flex;
+
+    @include media("<desktop"){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .resume-body-left {
+      padding: 1em 2em;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include media("<desktop"){
+        width: 100%;
+      }
+
+      .resume-contact-group-top {
+        margin-bottom: 2em;
+      }
+    }
+
+    .resume-body-right {
+      padding: 1em 2em;
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-left: 1px solid #bf9f5a;
+
+      @include media("<desktop"){
+        border-left: none;
+        width: 100%;
+      }
+
+      .resume-section {
+        &.bottom-space {
+          padding-bottom: 3em;
+        }
+      }
+    }
+
+    .resume-subheader {
+      margin: 0.4em 0;
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+
+    .resume-subheader-underline {
+      content: "";
+      width: 80px;
+      border-bottom: 3px solid #bf9f5a;
+      margin: 1em 0;
+    }
+
+    .resume-group {
+      position: relative;
+      padding-bottom: 1em;
+
+    }
+
+    .resume-text {
+      
+      &.bottom-space {
+        padding-bottom: 1em;
+      }
+
+      &.resume-date{
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @include media("<large"){
+          position: relative;
+        }
+      }
+
+      &.resume-title {
+        font-weight: 700;
+      }
+
+      &.resume-position {
+        font-weight: 700;
+        font-size: 1.2em;
+      }
+
+      &.resume-location {
+        font-weight: 700;
+        font-size: 1.1em;
+      }
+    }
+
+    .resume-link {
+      color: #025757;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
