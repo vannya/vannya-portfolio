@@ -827,7 +827,8 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex: 1 0 50%;
-  animation: slideInLeft .75s ease both; }
+  animation: slideInLeft .75s ease both;
+  max-width: 800px; }
   @media (max-width: 1023px) {
     .img-group {
       padding: 0 1rem; } }

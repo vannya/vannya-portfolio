@@ -78,6 +78,7 @@
   align-items: center;
   flex: 1 0 50%;
   animation: slideInLeft .75s ease both;
+  max-width: 800px;
 
   @include media('<desktop') {
     padding: 0 1rem;
