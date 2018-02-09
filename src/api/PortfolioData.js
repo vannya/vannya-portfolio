@@ -1,6 +1,14 @@
 module.exports = {
   portfolio: [
     {
+      pagename: "chingu",
+      name: "Chingu Developer Network",
+      description: "Front end development of the Chingu Developer Network client using React and interfacing with a Node / GraphQL / PostgreSQL backend.",
+      livelink: "https://chingu.io",
+      github: "https://github.com/chingu-x/chingu-frontend",
+      img: "chingu.jpg"
+    },
+    {
       pagename: "junipermail",
       name: "JuniperMail",
       description: "Survey creation application with a MERN framework.  Features include Stripe integration, Sendgrid integration (for webhooks), survey metrics and email templates for quick setup.",

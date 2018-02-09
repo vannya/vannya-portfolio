@@ -25,10 +25,10 @@ const Resume = () => {
               <div className="resume-subheader-underline"></div>
               <div className="resume-text">
                 Front end developer with experience using modern JavaScript
-                libraries. Analytical probelm solver with the ability to quickly
+                libraries. Analytical problem solver with the ability to quickly
                 learn new technologies and languages. Skilled multi-tasker who
                 is comfortable working within a team and independently. Seeking
-                a full-time position as a front end developer .
+                a full-time position as a front end developer.
               </div>
             </div>
             <div className="resume-section">
