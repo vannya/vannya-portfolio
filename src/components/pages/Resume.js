@@ -73,7 +73,7 @@ const Resume = () => {
             </div>
             <div className="resume-section">
               <div className="resume-subheader">CERTIFICATIONS</div>
-              <div className="resume-s<span>ubheader-underline"></div>
+              <div className="resume-subheader-underline"></div>
               <div className="resume-group">
                 <div className="resume-text">FCC Front End Certificate</div>
                 <div className="resume-text resume-date">Feb 2018</div>
@@ -137,7 +137,7 @@ const Resume = () => {
               <div className="resume-text"><a className="resume-link" href="https://chingu.io/">Chingu.io</a>: Front end development of the Chingu Development Network client using React and interfacing with a Node/GraphQL/PostgreSQL backend.</div>
               <div className="resume-text"><a className="resume-link" href="https://junipermail.herokuapp.com/">JuniperMail</a>: Survey generation site using MERN stack with Stripe and Sendgrid.</div>
               <div className="resume-text"><a className="resume-link" href="https://bearbnb-06.herokuapp.com/">Bearbnb</a>: Clone of Airbnb using ReactJS/Redux, Express, Node.js and MongoDB. </div>
-              <div className="resume-text"><a className="resume-link" href="https://www.npmjs.com/package/vannya-mern-app"></a>: NPM published boilerplate package for creating MERN apps.</div>
+              <div className="resume-text"><a className="resume-link" href="https://www.npmjs.com/package/vannya-mern-app">Vannya-MERN-app</a>: NPM published boilerplate package for creating MERN apps.</div>
               <div className="resume-text"><a className="resume-link" href="https://vannya.github.io/momentum-clone/">Momentum</a>: Clone of productivity Chrome Tab Extension using React/Firebase. </div>
               <div className="resume-text"><a className="resume-link" href="https://turtrello.herokuapp.com/">Turtrello</a>: Kanban-style web application using React and Firebase. </div>
               <div className="resume-text"><a className="resume-link" href="vannya.me/">Vannya.me</a>: Personal portfolio site using React where my work can be found.</div>

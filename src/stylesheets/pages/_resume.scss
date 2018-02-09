@@ -10,9 +10,17 @@
   }
 }
 
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .resume-wrapper {
   font-family: 'Roboto', sans-serif;
   border: 1px solid #bf9f5a;
+  max-width: 1200px;
   margin: 2em 8em;
   @include media("<desktop"){
     margin: 2em 6em;
@@ -152,7 +160,8 @@
     }
 
     .resume-text {
-      
+      max-width: 600px;
+
       &.bottom-space {
         padding-bottom: 1em;
       }

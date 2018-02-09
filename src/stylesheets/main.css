@@ -769,7 +769,6 @@ button:hover {
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   margin: 3rem;
   min-height: 100vh; }
@@ -788,35 +787,12 @@ button:hover {
     .about > a > i:hover {
       color: #bf9f5a; }
 
-.about-lower {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-  animation: slideInBottom .75s ease both; }
-  @media (min-width: 1025px) {
-    .about-lower {
-      max-width: 1200px; } }
-  @media (max-width: 1023px) {
-    .about-lower {
-      max-width: 600px; } }
-  .about-lower > div {
-    width: 200px;
-    margin: 0.5rem 0.5rem; }
-  .about-lower > div > h2 {
-    margin: 0.5rem 0;
-    font-size: 1.2rem; }
-  .about-lower > div > h4 {
-    margin: 0 auto;
-    font-size: 0.9rem; }
-
 .about-center {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 3rem; }
   @media (max-width: 1023px) {
     .about-center {
       flex-wrap: wrap; } }
@@ -832,8 +808,8 @@ button:hover {
   @media (max-width: 1023px) {
     .img-group {
       padding: 0 1rem; } }
-  .img-group > img {
-    margin: 0.75rem;
+  .img-group > div > img {
+    margin: 1.5rem 1.5rem 1.5rem 0;
     height: 300px;
     width: 300px; }
   .img-group > p {
@@ -1042,9 +1018,16 @@ button:hover {
     padding: 0.25rem 0.5rem;
     border: 1px solid #025757; }
 
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .resume-wrapper {
   font-family: 'Roboto', sans-serif;
   border: 1px solid #bf9f5a;
+  max-width: 1200px;
   margin: 2em 8em; }
   @media (max-width: 1023px) {
     .resume-wrapper {
@@ -1148,23 +1131,25 @@ button:hover {
     .resume-wrapper .resume-body .resume-group {
       position: relative;
       padding-bottom: 1em; }
-    .resume-wrapper .resume-body .resume-text.bottom-space {
-      padding-bottom: 1em; }
-    .resume-wrapper .resume-body .resume-text.resume-date {
-      position: absolute;
-      right: 0;
-      top: 0; }
-      @media (max-width: 1179px) {
-        .resume-wrapper .resume-body .resume-text.resume-date {
-          position: relative; } }
-    .resume-wrapper .resume-body .resume-text.resume-title {
-      font-weight: 700; }
-    .resume-wrapper .resume-body .resume-text.resume-position {
-      font-weight: 700;
-      font-size: 1.2em; }
-    .resume-wrapper .resume-body .resume-text.resume-location {
-      font-weight: 700;
-      font-size: 1.1em; }
+    .resume-wrapper .resume-body .resume-text {
+      max-width: 600px; }
+      .resume-wrapper .resume-body .resume-text.bottom-space {
+        padding-bottom: 1em; }
+      .resume-wrapper .resume-body .resume-text.resume-date {
+        position: absolute;
+        right: 0;
+        top: 0; }
+        @media (max-width: 1179px) {
+          .resume-wrapper .resume-body .resume-text.resume-date {
+            position: relative; } }
+      .resume-wrapper .resume-body .resume-text.resume-title {
+        font-weight: 700; }
+      .resume-wrapper .resume-body .resume-text.resume-position {
+        font-weight: 700;
+        font-size: 1.2em; }
+      .resume-wrapper .resume-body .resume-text.resume-location {
+        font-weight: 700;
+        font-size: 1.1em; }
     .resume-wrapper .resume-body .resume-link {
       color: #025757;
       text-decoration: none;
