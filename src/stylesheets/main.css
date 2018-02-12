@@ -867,7 +867,7 @@ button:hover {
   position: relative;
   height: 100%;
   width: 100%;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHUlEQVQYV2MU4Vg7882P4HQGKGCEMTAEYCoxVAAAUA0IBXarHFAAAAAASUVORK5CYII=) repeat; }
+  background-color: rgba(42, 23, 87, 0.3); }
 
 .typing-wrapper {
   top: 20%;

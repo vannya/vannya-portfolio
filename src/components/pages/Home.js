@@ -20,10 +20,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// <div className="rw-words rw-words-1">
-// <span></span>
-// <span>NUMBER CRUNCHER.</span>
-// <span>MINIMALIST.</span>
-// <span>BOOK DEVOURER.</span>
-// </div>

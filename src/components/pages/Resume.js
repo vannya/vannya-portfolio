@@ -1,7 +1,7 @@
 import React from "react";
 import PageHeader from "../common/PageHeader";
 import image from "../../stylesheets/assets/van.jpg";
-import resume from "../../stylesheets/assets/resume/Van Tabbert.pdf";
+import resume from "../../stylesheets/assets/resume/Van Tabbert - FE Developer.pdf";
 
 const Resume = () => {
   return (

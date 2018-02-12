@@ -43,7 +43,7 @@ module.exports = {
     {
       pagename: "fcc",
       name: "FCC Projects",
-      description: "Portfolio site with all the projects completed during the FCC Front End certificate. Projects include Simon and Tic Tac Toe games, a Pomodoro Timer, Personal Calculator, a quote generator, weather app and others.  Simple UI designs to focus on the functionality of the projects.",
+      description: "Portfolio site with all the projects completed during the FCC certifications. Projects include Simon and Tic Tac Toe games, a Pomodoro Timer, Calculator, Recipe Box, Markdown Previewer, a quote generator, weather app and others.  Simple UI designs to focus on the functionality of the projects.",
       livelink: "https://fcc.vannya.me",
       github: "https://github.com/vannya/fcc-projects",
       img: "fcc.jpg"
