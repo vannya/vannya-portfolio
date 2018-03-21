@@ -540,6 +540,16 @@ button:hover {
   .btn-color:hover {
     background-color: #a88a4f; }
 
+.submit-btn {
+  padding: 0.25rem 1rem;
+  background-color: #227B7F;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  outline: none; }
+  .submit-btn:hover {
+    background-color: #767676; }
+
 .call-to-action {
   height: 50vh;
   background: url("./assets/waves.jpg") no-repeat center center fixed;
@@ -771,7 +781,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   margin: 3rem;
-  min-height: 100vh; }
+  min-height: 80vh; }
   .about > p {
     max-width: 1200px;
     padding: 1rem 4rem; }
@@ -854,6 +864,49 @@ button:hover {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+
+.admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+  min-height: 50vh; }
+  .admin .admin-subheader {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 2em; }
+  .admin form {
+    width: 400px;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column; }
+    .admin form input {
+      width: 100%; }
+    .admin form textarea {
+      height: 100px;
+      width: 100%;
+      resize: none; }
+    .admin form button {
+      margin-top: 1rem; }
+
+.daily {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+  min-height: 50vh; }
+
+.daily-post {
+  padding: 10px;
+  width: 400px;
+  border-bottom: 1px solid #FFB400; }
+  .daily-post h4 {
+    margin: 10px 0; }
+  .daily-post ul {
+    list-style-type: disc;
+    margin: 0; }
+    .daily-post ul li {
+      margin: 5px 0; }
 
 .hero {
   height: 100vh;

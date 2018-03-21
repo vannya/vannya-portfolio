@@ -19,3 +19,16 @@
     background-color: #a88a4f;
   }
 }
+
+.submit-btn {
+  padding: 0.25rem 1rem;
+  background-color: color-list("accent");
+  color: color-list("text-light");
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: color-list("text-muted");
+  }
+}
