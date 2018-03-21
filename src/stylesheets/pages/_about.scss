@@ -51,15 +51,34 @@
   @include media('<desktop') {
     padding: 0 1rem;
   }
- 
-  > div > img { 
-    margin: 1.5rem 1.5rem 1.5rem 0;
-    height: 300px;
-    width: 300px;
-  }
 
+  section {
+    margin-bottom: 1rem;
+    img { 
+      margin: 1.5rem 1.5rem 1.5rem 0;
+      height: 300px;
+      width: 300px;
+    }
+
+  }
   > p {
     margin: 0.75rem;
+  }
+}
+
+.link-button {
+  padding: 0.25rem 1rem;
+  background-color: color-list("accent");
+  color: color-list("text-light");
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+
+  @include hocus {
+    background-color: color-list("text-muted");
   }
 }
 

@@ -36,7 +36,7 @@ class Daily extends Component {
   render() {
     return (
       <div className="daily">
-        <PageHeader text="Daily Log" />
+        <PageHeader text="Daily Achievement Log" />
         <p className="daily-subheading">Not a fan of blogging, so let's try some logging...</p>
         {this.renderPosts()}
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import PageHeader from "../common/PageHeader";
+import {Link} from "react-router-dom";
 import rocks from "../../stylesheets/assets/VanRocks-300x300.jpg";
 
 const About = props => {
@@ -8,7 +9,7 @@ const About = props => {
       <PageHeader text="Meet Van" />
       <div className="about-center">
         <div className="img-group">
-          <div>
+          <section>
             <img src={rocks} alt="Van Tabbert" align="left" />
             <p>
               I'm a Front-End Developer interested in creating efficient,
@@ -32,7 +33,8 @@ const About = props => {
               teams. I'd like to find a position in the DFW area or remote, but
               am willing to relocate for the right position.
             </p>
-          </div>
+          </section>
+          <Link to="/daily" className="link-button">Check Out My Daily Log</Link>
         </div>
       </div>
       {window.location.pathname === "/" ? (

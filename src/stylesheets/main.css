@@ -818,12 +818,27 @@ button:hover {
   @media (max-width: 1023px) {
     .img-group {
       padding: 0 1rem; } }
-  .img-group > div > img {
-    margin: 1.5rem 1.5rem 1.5rem 0;
-    height: 300px;
-    width: 300px; }
+  .img-group section {
+    margin-bottom: 1rem; }
+    .img-group section img {
+      margin: 1.5rem 1.5rem 1.5rem 0;
+      height: 300px;
+      width: 300px; }
   .img-group > p {
     margin: 0.75rem; }
+
+.link-button {
+  padding: 0.25rem 1rem;
+  background-color: #227B7F;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-bottom: 2rem; }
+  .link-button:hover, .link-button:focus {
+    background-color: #767676; }
 
 .nodisplay {
   visibility: hidden; }
