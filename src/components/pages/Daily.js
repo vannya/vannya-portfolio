@@ -26,7 +26,14 @@ class Daily extends Component {
 
   renderPosts = () => {
     if(!!this.state.posts) {
-      return this.state.posts.reverse().map((post,i) => {
+      let posts = this.state.posts.slice().sort(function (a, b) {
+        if(a.date > b.date) {
+          return a.date;
+        } else {
+          return b.date;
+        }
+      });
+      return posts.map((post,i) => {
         let postDate = post.date.toString();
         return <DailyPost key={i} date={postDate} events={post.events} />
       })

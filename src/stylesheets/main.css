@@ -915,6 +915,9 @@ button:hover {
   padding: 10px;
   width: 400px;
   border-bottom: 1px solid #FFB400; }
+  @media (max-width: 767px) {
+    .daily-post {
+      width: 100%; } }
   .daily-post h4 {
     margin: 10px 0; }
   .daily-post ul {
