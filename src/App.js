@@ -9,6 +9,9 @@ import About from './components/pages/About';
 import Projects from "./components/pages/Projects";
 import ProjectPage from "./components/pages/ProjectPage";
 import PortfolioAPI from "./api/PortfolioData";
+import Daily from "./components/pages/Daily";
+import Admin from "./components/pages/Admin";
+import Signin from "./components/pages/Signin";
 
 class App extends Component {
   state = {
@@ -33,6 +36,9 @@ class App extends Component {
         />
         <Route path="/about" component={About} />
         <Route path="/resume" component={Resume} />
+        <Route exact path="/daily" component={Daily} />
+        <Route exact path="/daily/admin" component={Admin} />
+        <Route exact path="/daily/signin" component={Signin} />
         {Object.keys(this.state.portfolio).map(item => {
           return (
             <Route
