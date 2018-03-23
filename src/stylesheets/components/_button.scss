@@ -1,22 +1,28 @@
 .btn {
   padding: 1rem;
-  background-color: transparent;
-  color: white;
+  color: color-list("text-light");
   font-size: 1.6rem;
   border-radius: 8px;
+  background-color: color-list("accent");
+  border: none;
   outline: none;
+
+  @include hocus {
+    background-color: color-list("primary");
+  }
 }
 
 .btn-color {
   padding: 0.25rem 1rem;
-  background-color: #bf9f5a;
-  color: black;
+  background-color: color-list("primary");
+  color: color-list("text-light");
   font-size: 1.2rem;
-  border-radius: 8px;
+  border-radius: 4px;
+  border: none;
   outline: none;
 
   &:hover {
-    background-color: #a88a4f;
+    background-color: color-list("accent");
   }
 }
 

@@ -4,21 +4,34 @@
 
 /// Regular font family
 /// @type List
-$base-font-family: 'Lora', serif;
+$base-font-family: 'Raleway', sans-serif;
 $base-font-size: 16px;
 $base-font-weight: 400;
 
 /// Color Map
 /// @type List
-$color-list: (
-	'primary': #F64C56, 
-	'accent': #227B7F,
-	'emphasis': #FFB400,
-	'text-light': #ffffff,
-	'text-dark': #414141,
-	'text-muted': #767676,
-);
+// Blues
+// $color-list: (
+// 	'primary': #003459, 
+// 	'accent': #007EA7,
+// 	'emphasis': #00A7E1,
+// 	'dark': #2E282A,
+// 	'text-light': #ffffff,
+// 	'text-dark': #000000,
+// 	'text-muted': #a8a8a8,
+// );
 
+// Brights
+$color-list: (
+	'primary': #26547C, 
+	'accent': #DA2C38,
+	'dark': #303036,
+	'resume-header': #f2f9fc,
+	'header-border': #e8e8e8,
+	'text-light': #ffffff,
+	'text-dark': #050401,
+	'text-muted': #a8a8a8,
+);
 
 /// Z-indexes
 /// @type List

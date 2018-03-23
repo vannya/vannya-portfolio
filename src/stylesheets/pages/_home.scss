@@ -20,7 +20,7 @@
   position: relative;
 	font-family: 'Roboto Slab', serif;
 	text-align: center;
-	color: white;
+	color: color-list("text-light");
 }
 
 .header-intro {
@@ -47,7 +47,7 @@
 	width: 15em;
 	margin: 0 auto;
 	padding-top: 1rem;
-	border-right: 2px solid rgba(255,255,255,.75);
+	border-right: 2px solid rgba(color-list("text-light"),.75);
 	text-align: center;
 	font-size: 1.8rem;
 	white-space: nowrap;
@@ -68,7 +68,7 @@
 }
 
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: rgba(color-list("text-light"),.75);}
   to{border-right-color: transparent;}
 }
 

@@ -1,6 +1,6 @@
 .card {
   margin: 2rem 0;
-  border: 1px solid lightgray;
+  border: 1px solid color-list("text-muted");
 
   @include media('<tablet') {
     margin: 0.4rem 0;
@@ -41,6 +41,6 @@
   padding: 0.5rem 0;
   text-align: center;
   font-size: 1.2rem;
-  color: black;
+  color: color-list("text-dark");
   text-decoration: none;
 }

@@ -16,6 +16,10 @@
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
+
+    @include media("<tablet") {
+      width: 100%;
+    }
     input {
       width: 100%;
     }
