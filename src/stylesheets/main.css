@@ -399,9 +399,9 @@ html {
   box-sizing: inherit; }
 
 body, button {
-  color: #414141;
+  color: #050401;
   font-size: 16px;
-  font-family: "Lora", serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 1.6; }
 
@@ -429,7 +429,7 @@ button:hover {
 
 .header-subtitle:before {
   position: absolute;
-  background-color: black;
+  background-color: #26547C;
   width: 60px;
   height: 1px;
   content: "";
@@ -442,7 +442,7 @@ button:hover {
 
 .header-subtitle:after {
   position: absolute;
-  background-color: black;
+  background-color: #26547C;
   width: 60px;
   height: 1px;
   content: "";
@@ -459,8 +459,8 @@ button:hover {
   align-items: center;
   justify-content: center;
   height: 150px;
-  background-color: #212121;
-  color: #999999; }
+  background-color: #303036;
+  color: #a8a8a8; }
 
 .social-icons {
   display: flex;
@@ -473,15 +473,15 @@ button:hover {
   text-decoration: none; }
 
 .social-icons > a > div > span.social-icon {
-  color: #999999; }
+  color: #a8a8a8; }
   .social-icons > a > div > span.social-icon:hover {
-    color: white;
-    background-color: #bf9f5a; }
+    color: #ffffff;
+    background-color: #DA2C38; }
 
 .social-icons > a > div > span.social-text {
-  color: #999999; }
+  color: #a8a8a8; }
   .social-icons > a > div > span.social-text:hover {
-    color: #bf9f5a; }
+    color: #ffffff; }
 
 .copyright {
   display: flex;
@@ -489,7 +489,7 @@ button:hover {
   align-items: center;
   width: 80%;
   height: 50px;
-  border-top: 1px solid #535353;
+  border-top: 1px solid #a8a8a8;
   text-align: center;
   font-size: 1rem;
   font-style: italic; }
@@ -497,7 +497,7 @@ button:hover {
 .bounce {
   padding: 5rem 0 0 0;
   text-align: center;
-  color: white;
+  color: #ffffff;
   font-size: 3rem;
   -webkit-animation-name: bounce;
   animation-name: bounce;
@@ -524,35 +524,39 @@ button:hover {
 
 .btn {
   padding: 1rem;
-  background-color: transparent;
-  color: white;
+  color: #ffffff;
   font-size: 1.6rem;
   border-radius: 8px;
+  background-color: #DA2C38;
+  border: none;
   outline: none; }
+  .btn:hover, .btn:focus {
+    background-color: #26547C; }
 
 .btn-color {
   padding: 0.25rem 1rem;
-  background-color: #bf9f5a;
-  color: black;
+  background-color: #26547C;
+  color: #ffffff;
   font-size: 1.2rem;
-  border-radius: 8px;
+  border-radius: 4px;
+  border: none;
   outline: none; }
   .btn-color:hover {
-    background-color: #a88a4f; }
+    background-color: #DA2C38; }
 
 .submit-btn {
   padding: 0.25rem 1rem;
-  background-color: #227B7F;
+  background-color: #DA2C38;
   color: #ffffff;
   border-radius: 8px;
   border: none;
   outline: none; }
   .submit-btn:hover {
-    background-color: #767676; }
+    background-color: #a8a8a8; }
 
 .call-to-action {
   height: 50vh;
-  background: url("./assets/waves.jpg") no-repeat center center fixed;
+  background: url("./assets/nightsky.png") no-repeat center bottom fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -561,8 +565,7 @@ button:hover {
 .cta-overlay {
   position: relative;
   height: 100%;
-  width: 100%;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHUlEQVQYV2MU4Vg7882P4HQGKGCEMTAEYCoxVAAAUA0IBXarHFAAAAAASUVORK5CYII=) repeat; }
+  width: 100%; }
 
 .cta-text {
   height: 100%;
@@ -572,7 +575,7 @@ button:hover {
 
 .card {
   margin: 2rem 0;
-  border: 1px solid lightgray; }
+  border: 1px solid #a8a8a8; }
   @media (max-width: 767px) {
     .card {
       margin: 0.4rem 0; } }
@@ -606,19 +609,8 @@ button:hover {
   padding: 0.5rem 0;
   text-align: center;
   font-size: 1.2rem;
-  color: black;
+  color: #050401;
   text-decoration: none; }
-
-.icon-blurb {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 200px;
-  padding: 1rem 0; }
-  .icon-blurb i {
-    color: #025757; }
 
 .navbar {
   display: flex;
@@ -651,14 +643,14 @@ button:hover {
   border-bottom: 2px solid transparent;
   cursor: pointer;
   transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  color: black;
+  color: #050401;
   text-decoration: none; }
   .navbar > ul > a > li:hover {
-    border-bottom: 2px solid #bf9f5a;
-    color: #bf9f5a;
+    border-bottom: 2px solid #DA2C38;
+    color: #DA2C38;
     background-color: transparent; }
   .navbar > ul > a > li.selected {
-    border-bottom: 2px solid #bf9f5a; }
+    border-bottom: 2px solid #26547C; }
   @media (max-width: 767px) {
     .navbar > ul > a > li {
       padding: 0 5px;
@@ -675,7 +667,7 @@ button:hover {
   width: 60px;
   bottom: -10px;
   margin-left: -30px;
-  background-color: #bf9f5a;
+  background-color: #26547C;
   content: ""; }
 
 .page-header:after {
@@ -685,67 +677,8 @@ button:hover {
   width: 90px;
   bottom: -5px;
   margin-left: -45px;
-  background-color: #bf9f5a;
+  background-color: #26547C;
   content: ""; }
-
-.progress-bar {
-  position: relative;
-  background: #757575;
-  height: 34px;
-  width: 100%;
-  padding: 0px;
-  margin: 1rem 0;
-  border-radius: 3px; }
-  @media (max-width: 1023px) {
-    .progress-bar {
-      height: 22px;
-      margin: 0.8rem 0; } }
-
-.progress-bar-fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  display: block;
-  background: #025757;
-  height: 100%;
-  border-radius: 3px; }
-
-.progress-bar-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  color: white;
-  font-family: 'Roboto Slab', serif;
-  letter-spacing: 1px;
-  font-size: 18px;
-  line-height: 34px;
-  text-indent: 10px;
-  border-radius: 3px; }
-  @media (max-width: 1023px) {
-    .progress-bar-label {
-      width: 100px;
-      font-size: 14px;
-      line-height: 22px;
-      text-indent: 10spx; } }
-
-.progress-bar-percentage {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  font-size: 16px;
-  line-height: 34px;
-  color: white;
-  background: transparent; }
-  @media (max-width: 1023px) {
-    .progress-bar-percentage {
-      right: 10px;
-      font-size: 14px;
-      line-height: 22px; } }
 
 .social-box {
   display: flex;
@@ -756,7 +689,7 @@ button:hover {
   width: 36px;
   height: 36px;
   line-height: 36px;
-  border: 1px solid gray;
+  border: 1px solid #a8a8a8;
   border-radius: 50%;
   background: none;
   font-size: 14px;
@@ -792,10 +725,10 @@ button:hover {
     font-size: 1.8rem;
     padding: 0;
     margin: 0 auto;
-    color: black;
+    color: #050401;
     text-decoration: none; }
     .about > a > i:hover {
-      color: #bf9f5a; }
+      color: #DA2C38; }
 
 .about-center {
   display: flex;
@@ -829,7 +762,7 @@ button:hover {
 
 .link-button {
   padding: 0.25rem 1rem;
-  background-color: #227B7F;
+  background-color: #DA2C38;
   color: #ffffff;
   border-radius: 8px;
   border: none;
@@ -838,7 +771,7 @@ button:hover {
   font-size: 1.4rem;
   margin-bottom: 2rem; }
   .link-button:hover, .link-button:focus {
-    background-color: #767676; }
+    background-color: #26547C; }
 
 .nodisplay {
   visibility: hidden; }
@@ -895,6 +828,9 @@ button:hover {
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column; }
+    @media (max-width: 767px) {
+      .admin form {
+        width: 100%; } }
     .admin form input {
       width: 100%; }
     .admin form textarea {
@@ -914,7 +850,7 @@ button:hover {
 .daily-post {
   padding: 10px;
   width: 400px;
-  border-bottom: 1px solid #FFB400; }
+  border-bottom: 1px solid #26547C; }
   @media (max-width: 767px) {
     .daily-post {
       width: 100%; } }
@@ -946,7 +882,7 @@ button:hover {
   position: relative;
   font-family: 'Roboto Slab', serif;
   text-align: center;
-  color: white; }
+  color: #ffffff; }
 
 .header-intro {
   margin: 0 auto;
@@ -1084,10 +1020,13 @@ button:hover {
   text-align: center;
   padding-top: 1rem; }
   .resume-download > a {
-    color: #025757;
+    color: #26547C;
     text-decoration: none;
     padding: 0.25rem 0.5rem;
-    border: 1px solid #025757; }
+    border: 1px solid #26547C; }
+    .resume-download > a:hover, .resume-download > a:focus {
+      background-color: #26547C;
+      color: #ffffff; }
 
 .resume {
   display: flex;
@@ -1097,7 +1036,7 @@ button:hover {
 
 .resume-wrapper {
   font-family: 'Roboto', sans-serif;
-  border: 1px solid #bf9f5a;
+  border: 1px solid #26547C;
   max-width: 1200px;
   margin: 2em 8em; }
   @media (max-width: 1023px) {
@@ -1111,8 +1050,8 @@ button:hover {
       margin: 2em 0; } }
   .resume-wrapper .resume-header {
     display: flex;
-    border-bottom: 1px solid #bf9f5a;
-    background-color: #f1e6ce; }
+    border-bottom: 1px solid #26547C;
+    background-color: #f2f9fc; }
     .resume-wrapper .resume-header .resume-header-left {
       display: flex;
       justify-content: center;
@@ -1183,7 +1122,7 @@ button:hover {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border-left: 1px solid #bf9f5a; }
+      border-left: 1px solid #26547C; }
       @media (max-width: 1023px) {
         .resume-wrapper .resume-body .resume-body-right {
           border-left: none;
@@ -1197,7 +1136,7 @@ button:hover {
     .resume-wrapper .resume-body .resume-subheader-underline {
       content: "";
       width: 80px;
-      border-bottom: 3px solid #bf9f5a;
+      border-bottom: 3px solid #26547C;
       margin: 1em 0; }
     .resume-wrapper .resume-body .resume-group {
       position: relative;
@@ -1222,6 +1161,6 @@ button:hover {
         font-weight: 700;
         font-size: 1.1em; }
     .resume-wrapper .resume-body .resume-link {
-      color: #025757;
+      color: #DA2C38;
       text-decoration: none;
       font-weight: 500; }

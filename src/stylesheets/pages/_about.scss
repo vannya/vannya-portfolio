@@ -18,11 +18,11 @@
     font-size: 1.8rem;
     padding: 0;
     margin: 0 auto;
-    color: black;
+    color: color-list("text-dark");
     text-decoration: none;
 
     &:hover {
-      color: #bf9f5a;
+      color: color-list("accent");
     }
   }
 }
@@ -78,7 +78,7 @@
   margin-bottom: 2rem;
 
   @include hocus {
-    background-color: color-list("text-muted");
+    background-color: color-list("primary");
   }
 }
 

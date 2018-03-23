@@ -25,7 +25,7 @@
 
 .header-subtitle:before {
   position: absolute;
-  background-color: black;
+  background-color: color-list("primary");
   width: 60px;
   height: 1px;
   content: "";
@@ -39,7 +39,7 @@
 
 .header-subtitle:after {
   position: absolute;
-  background-color: black;
+  background-color: color-list("primary");
   width: 60px;
   height: 1px;
   content: "";

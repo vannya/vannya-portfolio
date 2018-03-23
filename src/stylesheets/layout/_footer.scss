@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   height: 150px;
-  background-color: #212121;
-  color: #999999;
+  background-color: color-list("dark");
+  color: color-list("text-muted");
 }
 
 .social-icons {
@@ -21,17 +21,17 @@
 }
 
 .social-icons > a > div > span.social-icon {
-  color: #999999;
+  color: color-list("text-muted");
   &:hover {
-    color: white;
-    background-color: #bf9f5a;
+    color: color-list("text-light");
+    background-color: color-list("accent");
   }
 }
 
 .social-icons > a > div > span.social-text {
-  color: #999999;
+  color: color-list("text-muted");
   &:hover {
-    color: #bf9f5a;
+    color: color-list("text-light");
   }
 }
 
@@ -41,7 +41,7 @@
   align-items: center;
   width: 80%;
   height: 50px;
-  border-top: 1px solid #535353;
+  border-top: 1px solid color-list("text-muted");
   text-align: center;
   font-size: 1rem;
   font-style: italic;

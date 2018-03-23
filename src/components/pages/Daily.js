@@ -35,6 +35,7 @@ class Daily extends Component {
       });
       return posts.map((post,i) => {
         let postDate = post.date.toString();
+        // TODO: Add pagination.
         return <DailyPost key={i} date={postDate} events={post.events} />
       })
     }

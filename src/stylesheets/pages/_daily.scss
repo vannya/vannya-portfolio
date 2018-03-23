@@ -9,7 +9,7 @@
 .daily-post {
   padding: 10px;
   width: 400px;
-  border-bottom: 1px solid color-list("emphasis");
+  border-bottom: 1px solid color-list("primary");
   @include media("<tablet") {
     width: 100%;
   }

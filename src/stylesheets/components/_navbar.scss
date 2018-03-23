@@ -1,8 +1,8 @@
 .navbar {
   display: flex;
   justify-content: center;
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid color-list("header-border");
+  border-bottom: 1px solid color-list("header-border");
 
 }
 .navbar > ul {
@@ -35,17 +35,17 @@
   border-bottom: 2px solid transparent;
   cursor: pointer;
   transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  color: black;
+  color: color-list("text-dark");
   text-decoration: none;
 
   &:hover {
-    border-bottom: 2px solid #bf9f5a;
-    color: #bf9f5a;
+    border-bottom: 2px solid color-list("accent");
+    color: color-list("accent");
     background-color: transparent;
   }
 
   &.selected {
-    border-bottom: 2px solid #bf9f5a;
+    border-bottom: 2px solid color-list("primary");
   }
 
   @include media('<tablet'){
