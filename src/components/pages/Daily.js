@@ -27,10 +27,13 @@ class Daily extends Component {
   renderPosts = () => {
     if(!!this.state.posts) {
       let posts = this.state.posts.slice().sort(function (a, b) {
+        console.log(a, b)
         if(a.date > b.date) {
-          return a.date;
+          return -1;
+        } else if (a.date < b.date) {
+          return 1;
         } else {
-          return b.date;
+          return 0;
         }
       });
       return posts.map((post,i) => {
