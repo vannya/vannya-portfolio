@@ -2,14 +2,22 @@ import React, { Component } from 'react';
 import * as firebase from '../../firebase/firebase';
 import PageHeader from "../common/PageHeader";
 import DailyPost from "../common/DailyPost";
+import Pagination from "../common/Pagination";
 
 class Daily extends Component {
   state = { 
-    posts: []
+    posts: [],
+    pageOfItems: []
   }
 
   componentDidMount(){
     this.getDailyPost();
+  }
+
+  onChangePage = (pageOfItems) => {
+    this.setState({
+      pageOfItems: pageOfItems
+    })
   }
 
   async getDailyPost() {
@@ -27,7 +35,6 @@ class Daily extends Component {
   renderPosts = () => {
     if(!!this.state.posts) {
       let posts = this.state.posts.slice().sort(function (a, b) {
-        console.log(a, b)
         if(a.date > b.date) {
           return -1;
         } else if (a.date < b.date) {
@@ -50,6 +57,7 @@ class Daily extends Component {
         <PageHeader text="Daily Achievement Log" />
         <p className="daily-subheading">Not a fan of blogging, so let's try some logging...</p>
         {this.renderPosts()}
+        <Pagination items={this.state.posts} onChangePage={this.onChangePage} />
       </div>
     );
   }
