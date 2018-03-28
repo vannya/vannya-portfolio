@@ -595,6 +595,7 @@ button:hover {
   width: 355px;
   height: 180px;
   object-fit: cover;
+  object-position: top;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in; }
@@ -608,7 +609,7 @@ button:hover {
 .card-caption {
   padding: 0.5rem 0;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #050401;
   text-decoration: none; }
 

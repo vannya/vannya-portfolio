@@ -1,6 +1,14 @@
 module.exports = {
   portfolio: [
     {
+      pagename: "modmemes",
+      name: "modmemes",
+      description: "Meme Library application built with React/Redux, ExpressJS, NodeJS and MongoDB.  Features include theme options, viewable images/gifs, one-click link copying and tag filtering.",
+      livelink: "https://modmemes.herokuapp.com",
+      github: "https://github.com/vannya/modmemes",
+      img: "modmemes.jpg"
+    },
+    {
       pagename: "chingu",
       name: "Chingu Developer Network",
       description: "Front end development of the Chingu Developer Network client using React and interfacing with a Node / GraphQL / PostgreSQL backend.",
@@ -47,14 +55,6 @@ module.exports = {
       livelink: "https://fcc.vannya.me",
       github: "https://github.com/vannya/fcc-projects",
       img: "fcc.jpg"
-    },
-    {
-      pagename: "corporatesite",
-      name: "Corporate Site Template",
-      description: "Currently, I am developing a corporate website template using React/Express/MongoDB. Features include modular components and the ability to integrate with an admin view for data changes. This is a work in progress. Live Demo uses a dummy API for hosting simplicity.",
-      livelink: "https://vannya.github.io/corporate-site-clone/",
-      github: "https://github.com/vannya/corporate-site-clone",
-      img: "corporateclone.JPG"
     },
     {
       pagename: "resumeclone",
